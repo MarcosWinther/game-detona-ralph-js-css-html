@@ -1,0 +1,17 @@
+.container {
+   display: flex;
+   flex-direction: column;
+}
+
+.menu {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+   height: 5.625rem;
+   width: 100%;
+   background-color: #000000;
+   color: #FFFFFF;
+}
+
+.panel {}
