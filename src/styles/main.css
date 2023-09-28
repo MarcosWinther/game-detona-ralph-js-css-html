@@ -47,3 +47,13 @@
 .menu-lives img {
    height: 60px;
 }
+
+.menu-time h2:nth-child(1),
+.menu-score h2:nth-child(1) {
+   color: #ff0000;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+   margin-top: 1rem;
+}
