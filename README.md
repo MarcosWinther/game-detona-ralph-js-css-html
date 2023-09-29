@@ -10,11 +10,11 @@ Desafio de projeto proposto pelo expert Felipe Aguiar da plataforma da DIO (Digi
 
 ## 🖥 Preview do Jogo:
 ![Imagem do Jogo](src/images/imagemJogo.png)
-- Venha jogar acessando [aqui nesse link do GithubPages]()
+- Venha jogar acessando [aqui nesse link do GithubPages](https://marcoswinther.github.io/game-detona-ralph-js-css-html/)
 
 ## ⚙ Execução do Jogo
 1. **Clonar Repósitório:** basta utilizar o comando `git clone` para clonar esse projeto e salvar na máquina e depois executar o arquivo `index.html`.
-2. **GitHubPages:** pode também acessar o projeto nesse [link](), que abrirá esse projeto no GitHubPages, sem precisar baixar o repositório na sua máquina.
+2. **GitHubPages:** pode também acessar o projeto nesse [link](https://marcoswinther.github.io/game-detona-ralph-js-css-html/), que abrirá esse projeto no GitHubPages, sem precisar baixar o repositório na sua máquina.
 
 ## 🕹 Como jogar
 - O objetivo do jogo é clicar, usando o mouse, no personagem Ralph toda vez que ele aparecer. Cada click certo conta um ponto;
