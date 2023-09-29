@@ -30,7 +30,11 @@
    height: 150px;
    width: 150px;
    border: 1px solid #000000;
-   background-color: #1aeaa5;
+   background-color: #5cd9ff;
+}
+
+.square:hover {
+   background-color: #0f1fff;
 }
 
 .enemy {
@@ -46,6 +50,10 @@
 
 .menu-lives img {
    height: 60px;
+}
+
+.menu-lives #lives:after {
+   content: "❤️";
 }
 
 .menu-time h2:nth-child(1),
