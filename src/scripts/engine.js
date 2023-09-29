@@ -4,11 +4,13 @@ const state = {
       enemy: document.querySelector('.enemy'),
       timeLeft: document.querySelector('#time-left'),
       score: document.querySelector('#score'),
+      lives: document.querySelector('#lives'),
    },
    values:{
       hitPosition: 0,
       result: 0,
       currentTime: 60,
+      playerLives: 3,
    },
    actions: {
       timeId: setInterval(randomSquare, 1000),
@@ -25,6 +27,12 @@ function countDown() {
       clearInterval(state.actions.timeId);
       alert('Game Over! O seu resultado foi ' + state.values.result);
    }
+}
+
+function playSound(nameAudio) {
+   let audio = new Audio(`./src/audios/${nameAudio}.m4a`);
+   audio.volume = 0.2;
+   audio.play();
 }
 
 function randomSquare() {
@@ -45,12 +53,30 @@ function addListenerHitBox() {
             state.values.result++;
             state.view.score.textContent = state.values.result;
             state.values.hitPosition = null;
+
+            state.view.lives = state.values.playerLives;
+            playSound('hit');
+         } else {
+            state.values.result--;
+            state.view.score.textContent = state.values.result;
+            state.values.hitPosition = null;
+
+            if(state.values.playerLives <= 0) {
+               alert('Game Over! Você zerou todas as vidas!');
+               state.view.lives.textContent = state.values.playerLives;
+            } else {
+               state.values.playerLives--;
+               state.view.lives.textContent = state.values.playerLives;
+            }
+
+            playSound('windows-error');
          }
       })
    });
 }
 
 function initialize() {
+   state.view.lives.textContent = state.values.playerLives;
    addListenerHitBox();
 }
 
