@@ -1,5 +1,6 @@
 ## 🎮 Projeto Jogo Detona Ralph
-Desafio de projeto proposto pelo expert Felipe Aguiar da plataforma da DIO (Digital Innovation One). O objetivo desse projeto é criar um jogo com HTML, CSS e JavaScript.
+Desafio de projeto proposto pelo expert Felipe Aguiar da plataforma da DIO (Digital Innovation One). <br>
+O objetivo desse projeto é criar um jogo do Detona Ralph com HTML, CSS e JavaScript.
 
 ## 💻 Tecnologias usadas:
 <div style="display: inline_block">
